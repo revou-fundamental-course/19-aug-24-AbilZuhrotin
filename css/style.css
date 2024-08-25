@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-profile img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 2px ridge;
+    margin: 0px 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 0px 8px;
+    margin: 0px 10px;
+}
+
+article header h1{
+    margin: 19px 0px 4px 0px;
+}
+
+main article p{
+    margin: 0px 0px 19px 0px;
+}
+
+.benner{
+    height: 360px;
+    background-image: url(https://fastly.picsum.photos/id/274/3824/2520.jpg?hmac=OOl_w8LX_psogyruUe1z986AuqeS_TY7rLxAFgG4wrc);
+    background-size: cover;
+    background-position: center;
+}
+.profile-item{
+    border: 1px solid;
+    height: 50px;
+    background-image: url(https://fastly.picsum.photos/id/370/4928/3264.jpg?hmac=UGe0txSnG4hhV-fAoi7e3mTnvQFhYYNcPJJbYFePh5Q);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-profile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-item{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}
