@@ -4,76 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Website</title>
-    <link rel="stylesheet" href="css\style.css">
+    <title>SMK Kesehatan Bhakti Husada</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Bagian navigasi -->
-    <div class="container">
-        <section class="logo-profile">
-            <img src="assets\profile.png" alt="logo profile">
-        </section>
+    <section class="navigasi" id="#">
+        <div class="logo-web">
+            <img src="assets/logo.jpg" alt="">
+            <p>SMK Kesehatan <br> Bhakti Husada Banjarnegara</p>
+        </div>
 
         <nav>
             <a href="#">Beranda</a>
-            <a href="#">Profile</a>
-            <a href="#">Project</a>
-            <a href="#">Kontak Saya</a>
+            <a href="#profile">Profil Kami</a>
+            <a href="#fasilitas">Fasilitas</a>
+            <a href="#kontak">Kontak Kami</a>
         </nav>
-    </div>
-
+    </section>
     <hr />
 
-    <!-- Bagian menu utama -->
-    <main>
-        <article>
-            <header>
-                <h1>Hai ...., selamat datang</h1>
-            </header>
-            <p>Ini adalah website portofolioku</p>
+    <!-- bagian utama/article -->
+     <!-- banner -->
+    <article>
+        <header>
+            <h1>Hai kamu, Selamat Datang Di Bhakti Huasada</h1>
+        </header>
+        <p>Web ini, adalah web official SMK Kesehatan Bhakti Husada </p>
+        <img src="assets/banner.jpg" alt="">
+    </article>
+    <hr />
 
-            <div class="benner"></div>
-        </article>
+    <!-- article 1 -->
+    <section>
+        <header>
+            <h1 id="profile">Profile SMK</h1>
+        </header>
+        <div class="profile">
+            <h3>Tentang SMK</h3>
+            <img src="assets/logo.jpg" alt="">
+            <p>SMK FARMASI BHAKTI HUSADA BANJARNEGARA adalah salah satu satuan pendidikan dengan jenjang SMK di
+                Banjarnegara. Beralamat di Dusun Purwasari, Klampok, Kec. Purwareja Klampok, Kab. Banjarnegara,
+                Jawa Tengah</p>
+            <h3>Visi</h3>
+            BERKUALITAS, UNGGUL DALAM PRESTASI DAN MANDIRI
+            <h3>Misi</h3>
+            <p>
+                1. Meningkatkan Kualitas organisasi dan menejemen sekolah dalam menumbuhkan semangat keunggulan dan
+                kompetitif <br>
+                2. Meningkatkan kualitas kegiatan belajar mengajar (KBM) dalam mencapai kompetensi siswa dengan metod PAKEM <br>
+                3. Meningkatkan kualitas kompetensi guru dan karyawan dalam mewujudkan standar pelayanan minimal (SPM) <br>
+                4. Meningkatkan kuantitas dan kualitas sarana dan prasarana pendidikan dalam mendukung penguasaan IPTEK <br>
+                5. Meningkatkan kualitas SDM dan kualitas pembinaan kesiswaan dalam mewujudkan IMTAQ dan sikap <br>
+                6. Meningkatkan kemitraan dengan DU/DI sesuai demand driven <br>
+                7. Meningkatkan kualitas pengelolaan unit produksi dalam menunjang SDM <br>
+                8. Memberdayakan lingkungan sekolah dalam mewujudkan wawasan wawasan wiyatamandala <br>
+            </p>
+        </div>
+    </section>
+    <hr />
 
+    <!-- article 2 -->
+    <section>
+        <header>
+            <h1 id="fasilitas">Fasilitas</h1>
+        </header>
+        <div class="fasilitas">
+            <div>
+                <img src="assets/lab.jpg" alt="">
+                <h4>Laboratorium</h4>
+            </div>
+            <div>
+                <img src="assets/apotek.jpg" alt="">
+                <h4>Apotek Simulasi</h4>
+            </div>
+        </div>
+    </section>
+    <hr />
 
-        <br>
-        <br>
-        <hr />
-
-        <section>
-            <header>
-                <h1>Profile</h1>
-            </header>
-
-            <section class="section-profile">
-                <div class="item">
-                    <div class="profile-item"></div>
-                    <h3>Mahasiwa Informatika</h3>
+    <section>
+        <header>
+            <h1 id="kontak">
+                Kontak
+            </h1>
+        </header>
+        <form action="">
+            <div>
+                <div>
+                    <p>Nama :</p>
+                    <input type="text" placeholder="Nama">
                 </div>
-                <div class="item">
-                    <div class="profile-item"></div>
-                    <h3>Traveler</h3>
+                <div> 
+                    <p>Tanggal Lahir</p>
+                    <input type="date">
                 </div>
-                <div class="item">
-                    <div class="profile-item"></div>
-                    <h3>Relawan</h3>
+                <div>
+                    <p>Jenis Kelamin</p>
+                    <input type="radio" placeholder=""> <p>Laki-Laki</p>
+                    <input type="radio"> <p>Perempuan</p>
                 </div>
-            </section>
-
-        </section>
-
-        <section>
-            <form action="">
-
-            </form>
-
-            <div></div>
-        </section>
+                <div>
+                    <p>Pesan</p>
+                    <input type="text">
+                </div>
+            </div>
+        </form>
+    </section>
     </main>
 
-    <!-- Bagian footer -->
-    <footer></footer>
+    <!-- bagian footer -->
+    <footer>
+        
+    </footer>
+    <script></script>
 </body>
 
 </html>
