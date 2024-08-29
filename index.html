@@ -10,52 +10,58 @@
 
 <body>
     <!-- Bagian navigasi -->
-    <section class="navigasi" id="#">
-        <div class="logo-web">
-            <img src="assets/logo.jpg" alt="">
-            <p>SMK Kesehatan <br> Bhakti Husada Banjarnegara</p>
-        </div>
+    <header>
+        <section class="navigasi" id="#">
+            <div class="logo-web">
+                <img src="assets/logo.jpg" alt="">
+            </div>
 
-        <nav>
-            <a href="#">Beranda</a>
-            <a href="#profile">Profil Kami</a>
-            <a href="#fasilitas">Fasilitas</a>
-            <a href="#kontak">Kontak Kami</a>
-        </nav>
-    </section>
+                <nav>
+                    
+                        <ul><a href="#">Beranda</a></ul>
+                        <ul><a href="#profile">Profil Kami</a></ul>
+                        <ul><a href="#fasilitas">Fasilitas</a></ul>
+                        <ul><a href="#kontak">Hubungi Kami</a></ul>
+                   
+                </nav>
+        </section>
+    </header>
     <hr />
 
     <!-- bagian utama/article -->
-     <!-- banner -->
+
+    <!-- banner -->
     <article>
         <header>
-            <h1>Hai kamu, Selamat Datang Di Bhakti Huasada</h1>
+            <h1>Hai <span id="name" class="user">User</span>, Selamat Datang Di Bhakti Huasada</h1>
         </header>
         <p>Web ini, adalah web official SMK Kesehatan Bhakti Husada </p>
-        <img src="assets/banner.jpg" alt="">
+        <div class="banner"></div>
     </article>
     <hr />
 
     <!-- article 1 -->
     <section>
         <header>
-            <h1 id="profile">Profile SMK</h1>
+            <h1 id="profile">Profile</h1>
         </header>
         <div class="profile">
             <h3>Tentang SMK</h3>
-            <img src="assets/logo.jpg" alt="">
             <p>SMK FARMASI BHAKTI HUSADA BANJARNEGARA adalah salah satu satuan pendidikan dengan jenjang SMK di
                 Banjarnegara. Beralamat di Dusun Purwasari, Klampok, Kec. Purwareja Klampok, Kab. Banjarnegara,
                 Jawa Tengah</p>
-            <h3>Visi</h3>
+            <h4>Visi</h4>
             BERKUALITAS, UNGGUL DALAM PRESTASI DAN MANDIRI
-            <h3>Misi</h3>
+            <h4>Misi</h4>
             <p>
                 1. Meningkatkan Kualitas organisasi dan menejemen sekolah dalam menumbuhkan semangat keunggulan dan
                 kompetitif <br>
-                2. Meningkatkan kualitas kegiatan belajar mengajar (KBM) dalam mencapai kompetensi siswa dengan metod PAKEM <br>
-                3. Meningkatkan kualitas kompetensi guru dan karyawan dalam mewujudkan standar pelayanan minimal (SPM) <br>
-                4. Meningkatkan kuantitas dan kualitas sarana dan prasarana pendidikan dalam mendukung penguasaan IPTEK <br>
+                2. Meningkatkan kualitas kegiatan belajar mengajar (KBM) dalam mencapai kompetensi siswa dengan metod
+                PAKEM <br>
+                3. Meningkatkan kualitas kompetensi guru dan karyawan dalam mewujudkan standar pelayanan minimal (SPM)
+                <br>
+                4. Meningkatkan kuantitas dan kualitas sarana dan prasarana pendidikan dalam mendukung penguasaan IPTEK
+                <br>
                 5. Meningkatkan kualitas SDM dan kualitas pembinaan kesiswaan dalam mewujudkan IMTAQ dan sikap <br>
                 6. Meningkatkan kemitraan dengan DU/DI sesuai demand driven <br>
                 7. Meningkatkan kualitas pengelolaan unit produksi dalam menunjang SDM <br>
@@ -71,11 +77,11 @@
             <h1 id="fasilitas">Fasilitas</h1>
         </header>
         <div class="fasilitas">
-            <div>
+            <div class="fasilitas-container">
                 <img src="assets/lab.jpg" alt="">
                 <h4>Laboratorium</h4>
             </div>
-            <div>
+            <div class="fasilitas-container">
                 <img src="assets/apotek.jpg" alt="">
                 <h4>Apotek Simulasi</h4>
             </div>
@@ -83,41 +89,66 @@
     </section>
     <hr />
 
+    <!-- Kontak -->
     <section>
         <header>
-            <h1 id="kontak">
-                Kontak
-            </h1>
+            <h1 id="kontak">Hubungi Kami</h1>
         </header>
-        <form action="">
-            <div>
-                <div>
-                    <p>Nama :</p>
-                    <input type="text" placeholder="Nama">
-                </div>
-                <div> 
-                    <p>Tanggal Lahir</p>
-                    <input type="date">
-                </div>
-                <div>
-                    <p>Jenis Kelamin</p>
-                    <input type="radio" placeholder=""> <p>Laki-Laki</p>
-                    <input type="radio"> <p>Perempuan</p>
-                </div>
-                <div>
-                    <p>Pesan</p>
-                    <input type="text">
-                </div>
+        <!-- bagian input form message -->
+        <div class="form">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" placeholder="Masukkan Nama Anda" id="nama-anda">
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" id="tanggal-lahir">
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td><input type="radio" id="male" id="gender" value="male"><label for="male">Laki-Laki</label>
+                    </td>
+                    <td><input type="radio" id="female" id="gender" value="male"><label for="female">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td><textarea placeholder="Masukan pesan" id="pesan" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p id="eror-name"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="kirim">Kirim</button>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- hasil form message -->
+            <div class="hasil">
+                <p>Nama: <span id="output-nama"></span></p>
+                <p>Tanggal lahir: <span id="output-tanggal-lahir"></span></p>
+                <p>Jenis Kelamin: <span id="output-gender"></span></p>
+                <p>Pesan: <span id="output-pesan"></span></p>
             </div>
-        </form>
+        </div>
     </section>
     </main>
+    <br>
+    <br>
+    <hr />
 
     <!-- bagian footer -->
     <footer>
-        
+        <p>Revou-19/8/2024 By Abil Zuhrotin Sobabah</p>
     </footer>
-    <script></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
